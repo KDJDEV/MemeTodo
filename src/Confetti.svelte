@@ -1,0 +1,71 @@
+<script context="module">
+    import confetti from "canvas-confetti";
+
+    export function confettiOne() {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+        });
+    }
+    export function confettiTwo() {
+        var duration = 3 * 1000;
+        var animationEnd = Date.now() + duration;
+        var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+        function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        var interval = setInterval(function () {
+            var timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+                return clearInterval(interval);
+            }
+
+            var particleCount = 50 * (timeLeft / duration);
+            // since particles fall down, start a bit higher than random
+            confetti(
+                Object.assign({}, defaults, {
+                    particleCount,
+                    origin: {
+                        x: randomInRange(0.1, 0.3),
+                        y: Math.random() - 0.2,
+                    },
+                })
+            );
+            confetti(
+                Object.assign({}, defaults, {
+                    particleCount,
+                    origin: {
+                        x: randomInRange(0.7, 0.9),
+                        y: Math.random() - 0.2,
+                    },
+                })
+            );
+        }, 250);
+    }
+    export function confettiThree() {
+        function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        let n = 0;
+        function loop() {
+            confetti({
+                angle: randomInRange(55, 125),
+                spread: randomInRange(50, 70),
+                particleCount: randomInRange(50, 100),
+                origin: { y: 0.6 },
+            });
+            n++;
+            if (n < 5){
+                setTimeout(() => {
+                    loop();
+                }, 400);
+            }
+        }
+        loop();
+    }
+</script>
