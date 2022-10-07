@@ -49,7 +49,7 @@
     },
     "linux": {
       "maintainer":"kdj",
-      "target": ["deb", "snap", "AppImage", "rpm"]
+      "target": ["deb", "snap", "AppImage"]
     }
   }
 }
