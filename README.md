@@ -14,14 +14,14 @@ https://memetodo.vercel.app/
 ### Creating new tasks
 New tasks(aka todos) can be created by clicking the "Add new tasks" button.
 ### Removing and completing tasks
-Active tasks can be either completed or deleted. Completing a task reward syou with a meme, and can be accomplished by clicking the checkmark icon 
+Active tasks can be either completed or deleted. Completing a task rewards you with a meme, and can be accomplished by clicking the checkmark icon 
 <img src="https://memetodo.vercel.app/check.png" alt="MemeTodo logo" width="13"/>
  on the right side of the task. Deleting a task removes it from the task list, and can be accomplished by clicking the trash button 
 <img src="https://memetodo.vercel.app/trash.png" alt="MemeTodo logo" width="13"/>
 .
 
 ### Job groups
-A new group of tasks can be created by clicking the plus button next to your preexisting job tabs at the top of the application viewport. Entire groups can be removed by clicking "Remove job" with your desired group selected. You can select and switch betweengroups by clicking the tabs at the top of the viewport.
+A new group of tasks can be created by clicking the plus button next to your preexisting job tabs at the top of the application viewport. Entire groups can be removed by clicking "Remove job" with your desired group selected. You can select and switch between groups by clicking the tabs at the top of the viewport.
 
 ### Setting your subreddit
 Meme Todo sources it's memes by grabbing random posts from subreddits. You can change this subreddit(which is by default [/memes](https://www.reddit.com/r/memes/)), by clicking the options gear
@@ -33,13 +33,14 @@ Here are some recommended subreddits:
 - [/programmingmemes](https://www.reddit.com/r/programmingmemes/)
 - [/spongebobmemes](https://www.reddit.com/r/spongebobmemes/)
 
-It should be noted that subreddits do not need to be strictly meme related. Some non-meme suggestions are:
+It should be noted that subreddits do not need to be strictly meme-related. Some non-meme suggestions are:
 - [/aww](https://www.reddit.com/r/aww/)
 - [/motivationalquotes](https://www.reddit.com/r/motivationalquotes/)
 
 Choose whatever motivates you most!
 
 ## Motivations
-The idea behind this project is that by providing a sort of positive feedback through memes no task completion, users will be more motivated to complete their own personal tasks.
+The idea behind this project is that by providing a sort of positive feedback through memes on task completion, users will be more motivated to complete their own personal tasks.
 
 ## License
+[MIT](https://github.com/KDJDEV/MemeTodo/blob/main/LICENSE)
