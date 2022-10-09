@@ -10,6 +10,12 @@ MemeTodo is a todo list application that rewards you with random memes pulled fr
 MemeTodo is built with Electron.js, and can run on Windows, MacOS, and Linux. You can find prebuilt installers on this project's accompanying website:
 https://memetodo.vercel.app/
 
+If you would like to build the installers out yourself from [the source](https://github.com/KDJDEV/MemeTodo), you can do so by running:
+```
+npm run dist
+```
+Yes, it's as simple as that thanks to [electron-builder](https://github.com/electron-userland/electron-builder).
+Note that you may not be able to build all installers from one OS. For example, you cannot build MacOS installers from a Windows machine.
 ## Usage
 ### Creating new tasks
 New tasks(aka todos) can be created by clicking the "Add new tasks" button.
