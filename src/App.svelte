@@ -1,5 +1,4 @@
 <script lang="ts">
-	// @ts-nocheck
 	import { fly } from "svelte/transition";
 	import { confettiOne, confettiTwo, confettiThree } from "./Confetti.svelte";
 	import Settings from "./Settings.svelte";
@@ -117,42 +116,7 @@
 		const index: number = Number(
 			e.target.parentElement.getAttribute("data-index")
 		);
-		const targetNode = e.target.parentElement;
-		let centerX = targetNode.offsetLeft + targetNode.offsetWidth / 2;
-		let centerY = targetNode.offsetTop + targetNode.offsetHeight / 2;
-
-		/* var video = document.createElement("video");
-		video.style.position = "absolute";
-		video.style.left = centerX - 50 + "px";
-		video.style.top = centerY - 30 + "px";
-		video.style.width = "100px";
-		video.src = "explosion.mp4";
-		video.autoplay = true;
-		video.volume = 0;
-		document.body.appendChild(video);
-		function fade(element) {
-			var op = 1; // initial opacity
-			var timer = setInterval(function () {
-				if (op <= 0.1) {
-					clearInterval(timer);
-					element.style.display = "none";
-				}
-				element.style.opacity = op;
-				element.style.filter = "alpha(opacity=" + op * 100 + ")";
-				element.style.transform = `scale(${1 + 0.2 / op})`;
-				targetNode.style.transform = `scale(${op / 10})`;
-				op -= op * 0.15;
-			}, 50);
-		}
-		fade(video);
-
-		setTimeout(() => {
-			targetNode.style.transform = `scale(1)`;
-			groups[currentGroupIndex].tasks = groups[
-				currentGroupIndex
-			].tasks.filter((_, i) => index !== i);
-			localStorage.setItem("groups", JSON.stringify(groups));
-		}, 1000); */
+	
 		groups[currentGroupIndex].tasks = groups[
 			currentGroupIndex
 		].tasks.filter((_, i) => index !== i);
