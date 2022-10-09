@@ -11,10 +11,11 @@ app.on("ready", () => {
     autoHideMenuBar: true,
     webPreferences: {
       enableRemoteModule: true,
-      devTools: true
+      devTools: false
     },
     icon: __dirname + '/public/build/icon.ico',
   });
+  mainWindow.removeMenu()
   mainWindow.loadFile(path.join(__dirname, "public/index.html"));
   mainWindow.setBackgroundColor('#FFF');
   mainWindow.webContents.on('new-window', function (e, url) {
